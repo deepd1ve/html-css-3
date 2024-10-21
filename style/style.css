@@ -268,6 +268,7 @@
 .main .main-content .card-container .card .card-content .card-btn {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .main .main-content .card-container .card .card-content .card-btn .btn-left {
@@ -296,6 +297,40 @@
   .btn-right
   a:hover {
   background-color: transparent;
+}
+
+.brand-container {
+  width: 80%;
+  margin: 0 auto;
+  height: 70%;
+  padding: 200px 0;
+  background-color: #283036;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.brand-container .brand {
+  backdrop-filter: blur(6px) saturate(180%);
+  -webkit-backdrop-filter: blur(6px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 30px;
+}
+
+.brand-container .brand .brand-title h1 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffffcc;
+}
+
+.brand-container .brand .brand-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 100px;
 }
 
 /* MEDIA */
