@@ -297,13 +297,14 @@
   .btn-right
   a:hover {
   background-color: transparent;
+  color: #ff6e30;
 }
 
 .brand-container {
   width: 80%;
   margin: 0 auto;
   height: 70%;
-  padding: 200px 0;
+  padding: 150px 0;
   background-color: #283036;
   justify-content: center;
   flex-wrap: wrap;
@@ -311,26 +312,184 @@
 }
 
 .brand-container .brand {
-  backdrop-filter: blur(6px) saturate(180%);
+  /* backdrop-filter: blur(6px) saturate(180%);
   -webkit-backdrop-filter: blur(6px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.1);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
-  padding: 30px;
+  padding: 30px; */
 }
 
 .brand-container .brand .brand-title h1 {
   font-weight: 500;
   font-size: 24px;
   color: #ffffffcc;
+  padding-bottom: 50px;
 }
 
 .brand-container .brand .brand-img {
+  backdrop-filter: blur(6px) saturate(180%);
+  -webkit-backdrop-filter: blur(6px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 30px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.brand-container .brand .brand-img .grid-box img {
+  width: 100%;
+  padding: 30px;
+}
+
+.newcomers-back {
+  width: 100%;
+  height: 100%;
+  background-color: #283036;
+}
+
+.newcomers-back .newcomers-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.newcomers-back .newcomers-container .tools {
+  padding-top: 100px;
+}
+
+.newcomers-back .newcomers-container .tools h1 {
+  font-weight: 500;
+  font-size: 48px;
+  /* margin: 0 auto; */
+  color: #ffffffe5;
+}
+
+.newcomers-back .newcomers-container .tools p {
+  font-weight: 500;
+  width: 427px;
+  font-size: 18px;
+  color: #ffffff8c;
+  padding: 30px 0 46px 0;
+}
+
+.newcomers-back .newcomers-container .tools a {
+  background-color: #ff6e30;
+  padding: 16px 40px;
+  border-radius: 8px;
+  border: 1px solid #ff6e30;
+  color: #fdf5ff;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 0.3s all;
+}
+
+.newcomers-back .newcomers-container .tools a:hover {
+  background-color: transparent;
+  color: #ff6e30;
+}
+
+.newcomers-back .newcomers-container .new-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.newcomers-back .newcomers-container .new-card .tools-card {
+  width: 300px;
+  overflow: hidden;
+  margin: 20px;
+  padding: 25px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.newcomers-back .newcomers-container .new-card .tools-card .card-head {
+  display: flex;
+  gap: 30px;
+  align-content: center;
+  color: #fdf5ff;
+}
+.newcomers-back
+  .newcomers-container
+  .new-card
+  .tools-card
+  .card-head
+  .tool-name
+  p {
+  color: #ff6e30;
+}
+
+.newcomers-back .newcomers-container .new-card .tools-card .tool-content p {
+  color: #ffffff8c;
+  padding: 22px 0;
+}
+
+.newcomers-back
+  .newcomers-container
+  .new-card
+  .tools-card
+  .tool-content
+  .tool-btn {
   display: flex;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  gap: 100px;
+  justify-content: space-between;
+}
+.newcomers-back
+  .newcomers-container
+  .new-card
+  .tools-card
+  .tool-content
+  .tool-btn
+  .btn-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.newcomers-back
+  .newcomers-container
+  .new-card
+  .tools-card
+  .tool-content
+  .tool-btn
+  .btn-right
+  a {
+  border: 1px solid #ff6e30;
+  border-radius: 8px;
+  background-color: #ff6e30;
+  padding: 10px 35px;
+  color: #fdf5ff;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.3s all;
+}
+
+.newcomers-back
+  .newcomers-container
+  .new-card
+  .tools-card
+  .tool-content
+  .tool-btn
+  .btn-right
+  a:hover {
+  background-color: transparent;
+  color: #ff6e30;
 }
 
 /* MEDIA */
